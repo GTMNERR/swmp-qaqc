@@ -10,6 +10,7 @@ library(dygraphs)
 
 ui <- dashboardPage(
   dashboardHeader(title = "SWMP Water Quality"),
+  
   dashboardSidebar(
     sidebarMenu(
     menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
@@ -17,6 +18,7 @@ ui <- dashboardPage(
              badgeLabel = "new", badgeColor = "green")
     )
   ),
+  
   dashboardBody(
     tabItems(
       # First tab content
